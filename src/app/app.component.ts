@@ -7,12 +7,12 @@ import { AccountComponent } from './account/account.component';
   standalone: true,
   imports: [RouterModule, AccountComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
 export class AppComponent {
   title = 'my-account-app';
 
-  constructor(private router: Router){}
+  constructor(private router: Router) {}
 
   onSearchInputChange($event: any) {
     const searchQuery = $event.target.value;
